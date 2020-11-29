@@ -77,8 +77,9 @@ const anotherTask = (cb) => {
 
 gulp.task(anotherTask);
 
-// To run multiple task in default
 
 exports.seriesTask = gulp.series(['message','copyHtml','imageMin','sass','anotherTask', 'scripts']);
 
 exports.parallelTask = gulp.parallel(['message','copyHtml','imageMin','minify','sass', 'anotherTask']);
+
+exports.default = gulp.series(['message','copyHtml','imageMin','sass','anotherTask', 'scripts']);  // Default task
