@@ -1,0 +1,1 @@
+console.log("This is first console"),console.log("This is second console");
